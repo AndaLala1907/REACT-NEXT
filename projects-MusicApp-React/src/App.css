@@ -1,0 +1,133 @@
+#root {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.artist-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.artist-cover {
+  width: 100%;
+  height: auto;
+  max-width: 500px; /* Madhësia e zakonshme për faqen kryesore */
+  margin-bottom: 20px;
+}
+
+.small-artist-cover {
+  max-width: 300px; /* Imazhi më i vogël në faqen e detajeve */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artist-details {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+.artist-item {
+  position: relative; /* Pozicionim relativ për artist-image-container */
+  margin-bottom: 20px;
+}
+
+.artist-image-container {
+  position: relative; /* Nevojitet për pozicionimin absolut të butonit brenda imazhit */
+  display: inline-block;
+}
+
+.artist-item img {
+  width: 100%;
+  height: auto;
+}
+
+.artist-name-button {
+  position: absolute;
+  bottom: 5px; /* Pozicionohet 10px nga fundi */
+  left: 0.1px;  /* Pozicionohet 10px nga majta */
+  background-color:#4084bc; /* Hapa transparente për të bërë butonin të duket mbi imazh */
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+ 
+}
+
+
+
+.not-found {
+  text-align: center;
+  color: #f00;
+  font-size: 1.5rem;
+}
+
+
+.albums-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.album-list-images {
+  font-size: 1.2rem;
+  width: 100%;
+  height: auto;
+  background-color:rgb(186, 184, 184) ;
+}
+
+
+.navbar {
+  width: 100%;
+  height: 600px;
+  padding: 32px;
+  margin: -32px;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/images/raw/Girls-Listen-Music_0.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-link {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #7eebda;
+}
+
+/* Footer styling */
+.navbar-footer {
+  text-align: center;
+  margin: 0;
+  padding-top: 0;
+  position: relative; /* Vendosim pozicionimin për shtrirje më të saktë */
+}
+
+.navbar-footer::before {
+  content: "";
+  display: block;
+  width: 109.1%; /* Zgjat linjën pak më shumë se navbar-i */
+  height: 15px;
+  background-color: #7eebda; /* Vija blu */
+  margin: 0 auto; /* Qendrohet në mes */
+  margin-top: 20px;
+  transform: translateX(-4.2%); /* E zhvendos për të mbuluar nga të dyja anët */
+}
+
+.footer-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+}
